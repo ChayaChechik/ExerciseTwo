@@ -1,0 +1,9 @@
+<h4 class="title">Registered Users</h4>
+<div>
+  <button class="btn" (click)="addRandomUser()" (mouseenter)="setBtnText('Click Me')" (mouseleave)="setBtnText('Add')">{{btnText}}</button>
+  <ul>
+    <li *ngFor="let user of users">
+      <span>{{user}}</span>
+    </li>
+  </ul>
+</div>
